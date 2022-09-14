@@ -1,5 +1,6 @@
-﻿using Apress.Sample.gRPC;
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
+using Sample.gRPC;
+using Sample.gRPC.v1;
 
 namespace GrpcService.Services
 {

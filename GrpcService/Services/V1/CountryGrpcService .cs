@@ -1,10 +1,9 @@
-using Apress.Sample.gRPC;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using GrpcService;
-using static Apress.Sample.gRPC.CountryService;
+using Sample.gRPC.v1;
+using static Sample.gRPC.v1.CountryService;
 
-namespace GrpcService.Services;
+namespace GrpcService.Services.V1;
 public class CountryGrpcService : CountryServiceBase
 {
     private readonly CountryManagementService _countryManagementService;

@@ -1,5 +1,6 @@
-﻿using Apress.Sample.gRPC;
-using FluentValidation;
+﻿using FluentValidation;
+using Sample.gRPC;
+using Sample.gRPC.v1;
 
 namespace GrpcService
 {
