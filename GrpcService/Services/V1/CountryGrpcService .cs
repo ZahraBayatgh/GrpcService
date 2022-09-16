@@ -17,11 +17,12 @@ public class CountryGrpcService : CountryServiceBase
     {
 
         //////////// Something is going wrong here //////////// 
-        throw new Exception("Something got really wrong here");
-
+        //  throw new Exception("Something got really wrong here");
+        var headers = context.GetHttpContext().Request.Headers;
 
         // Streams all found countries to the client
-        var countries = await _countryManagementService.GetAllAsync(); foreach (var country in countries)
+        var countries = await _countryManagementService.GetAllAsync(); 
+        foreach (var country in countries)
         {
             await responseStream.WriteAsync(country);
         }
